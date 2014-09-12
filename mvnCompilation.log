@@ -1,0 +1,884 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] onebusaway-application-modules
+[INFO] onebusaway-core
+[INFO] onebusaway-geospatial
+[INFO] onebusaway-federations
+[INFO] onebusaway-realtime-api
+[INFO] onebusaway-transit-data
+[INFO] onebusaway-container
+[INFO] onebusaway-users
+[INFO] onebusaway-geocoder
+[INFO] onebusaway-presentation
+[INFO] onebusaway-webapp
+[INFO] 
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-application-modules 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-core 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program3\onebusaway-application-modules\onebusaway-core\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-core ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-core\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.onebusaway.utility.InterpolationLibraryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.onebusaway.utility.DateLibraryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ onebusaway-core ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-geospatial 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-geospatial ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-geospatial ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-geospatial ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program3\onebusaway-application-modules\onebusaway-geospatial\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-geospatial ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-geospatial ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-geospatial\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.onebusaway.geospatial.services.DefaultProjectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec
+Running org.onebusaway.geospatial.services.UTMLibraryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.onebusaway.geospatial.services.SphericalGeometryLibraryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.onebusaway.geospatial.services.PolylineEncoderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.onebusaway.geospatial.grid.GridFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.onebusaway.geospatial.grid.BoundaryFactoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.onebusaway.geospatial.model.XYPointTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.onebusaway.geospatial.grid.MapGridTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.onebusaway.geospatial.grid.TimedGridFactoryTest
+0.003597280777338341
+134.11200000000002
+t=3
+y}zaHrhpiV?k`@|k@??j`@ 4
+t=4
+y}zaHfgoiV?k`@|k@??j`@ 4
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.onebusaway.geospatial.services.UTMProjectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.onebusaway.geospatial.model.CoordinateBoundsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+
+Results :
+
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ onebusaway-geospatial ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-federations 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-federations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program3\onebusaway-application-modules\onebusaway-federations\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-federations ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-federations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program3\onebusaway-application-modules\onebusaway-federations\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-federations ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-federations ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-federations\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.onebusaway.federations.annotations.FederatedByLocationMethodInvocationHandlerImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec
+Running org.onebusaway.federations.impl.DynamicFederatedServiceCollectionImplTest
+2014-04-19 11:48:07,824 INFO  [Slf4jLog.java:67] : Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-04-19 11:48:07,856 INFO  [Slf4jLog.java:67] : jetty-6.1.22
+2014-04-19 11:48:07,899 INFO  [Slf4jLog.java:67] : Started SocketConnector@0.0.0.0:9999
+2014-04-19 11:48:07,959 INFO  [DynamicFederatedServiceCollectionImpl.java:178] : service added: http://localhost:9999/service-A/service
+2014-04-19 11:48:18,915 INFO  [DynamicFederatedServiceCollectionImpl.java:178] : service added: http://localhost:9999/service-B/service
+2014-04-19 11:48:29,911 WARN  [DynamicFederatedServiceCollectionImpl.java:160] : error querying service url: http://localhost:9999/service-B/service
+2014-04-19 11:48:30,917 WARN  [DynamicFederatedServiceCollectionImpl.java:160] : error querying service url: http://localhost:9999/service-A/service
+2014-04-19 11:48:30,918 INFO  [DynamicFederatedServiceCollectionImpl.java:176] : service removed: http://localhost:9999/service-B/service
+2014-04-19 11:48:30,918 INFO  [DynamicFederatedServiceCollectionImpl.java:176] : service removed: http://localhost:9999/service-A/service
+2014-04-19 11:48:31,920 WARN  [DynamicFederatedServiceCollectionImpl.java:160] : error querying service url: http://localhost:9999/service-B/service
+2014-04-19 11:48:32,925 WARN  [DynamicFederatedServiceCollectionImpl.java:160] : error querying service url: http://localhost:9999/service-A/service
+2014-04-19 11:48:33,927 WARN  [DynamicFederatedServiceCollectionImpl.java:160] : error querying service url: http://localhost:9999/service-B/service
+2014-04-19 11:48:34,939 WARN  [DynamicFederatedServiceCollectionImpl.java:160] : error querying service url: http://localhost:9999/service-A/service
+2014-04-19 11:48:35,941 WARN  [DynamicFederatedServiceCollectionImpl.java:160] : error querying service url: http://localhost:9999/service-B/service
+2014-04-19 11:48:36,943 WARN  [DynamicFederatedServiceCollectionImpl.java:160] : error querying service url: http://localhost:9999/service-A/service
+2014-04-19 11:48:37,945 WARN  [DynamicFederatedServiceCollectionImpl.java:160] : error querying service url: http://localhost:9999/service-B/service
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.27 sec
+Running org.onebusaway.federations.annotations.FederatedByAgencyIdMethodInvocationHandlerImplTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running org.onebusaway.federations.FederatedServiceFactoryBeanTest
+2014-04-19 11:48:38,093 INFO  [LazyFederatedServiceCollectionImpl.java:51] : instantiating FederatedServiceRegistry
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running org.onebusaway.federations.annotations.FederatedByCoordinateBoundsMethodInvocationHandlerImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.onebusaway.federations.annotations.AgencyIdSupportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.onebusaway.federations.impl.FederatedServiceRegistryImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.onebusaway.federations.annotations.FederatedByAggregateMethodInvocationHandlerImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.onebusaway.federations.annotations.FederatedServiceMethodInvocationHandlerFactoryTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.onebusaway.federations.annotations.FederatedByAgencyIdsMethodInvocationHandlerImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.onebusaway.federations.FederatedServiceCollectionImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.onebusaway.federations.annotations.FederatedByBoundsMethodInvocationHandlerImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+
+Results :
+
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ onebusaway-federations ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-realtime-api 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-realtime-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program3\onebusaway-application-modules\onebusaway-realtime-api\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-realtime-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-realtime-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program3\onebusaway-application-modules\onebusaway-realtime-api\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-realtime-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-realtime-api ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-realtime-api\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ onebusaway-realtime-api ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-transit-data 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-transit-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-transit-data ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-transit-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program3\onebusaway-application-modules\onebusaway-transit-data\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-transit-data ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-transit-data ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-transit-data\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ onebusaway-transit-data ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-container 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-container ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-container ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-container ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-container ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-container ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-container\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.onebusaway.container.cache.CacheableMethodManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 sec
+Running org.onebusaway.container.cache.CacheableMethodKeyFactoryManagerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.onebusaway.container.cache.DefaultCacheableKeyFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ onebusaway-container ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-users 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-users ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-users ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-users ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-users ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-users ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-users\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.onebusaway.users.impl.validation.KeyValidationProviderV1ImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running org.onebusaway.users.impl.PhoneNumberLibraryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.onebusaway.users.impl.validation.SaltedPasswordValidationProviderV1ImplTest
+2014-04-19 11:48:39,578 WARN  [SaltedPasswordValidationProviderV1Impl.java:71] : expected one password argument to isValidKey call
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Running org.onebusaway.users.impl.UserPropertiesServiceV1ImplTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Running org.onebusaway.users.utility.DigesterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.onebusaway.users.impl.UserDaoImplTest
+2014-04-19 11:48:39,701 INFO  [Version.java:15] : Hibernate Annotations 3.4.0.GA
+2014-04-19 11:48:39,707 INFO  [Environment.java:543] : Hibernate 3.3.1.GA
+2014-04-19 11:48:39,709 INFO  [Environment.java:576] : hibernate.properties not found
+2014-04-19 11:48:39,710 INFO  [Environment.java:709] : Bytecode provider name : javassist
+2014-04-19 11:48:39,712 INFO  [Environment.java:627] : using JDK 1.4 java.sql.Timestamp handling
+2014-04-19 11:48:39,741 INFO  [Version.java:14] : Hibernate Commons Annotations 3.1.0.GA
+2014-04-19 11:48:39,743 INFO  [Configuration.java:1460] : configuring from resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:39,743 INFO  [Configuration.java:1437] : Configuration resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:39,789 INFO  [Configuration.java:586] : Reading mappings from resource : org/onebusaway/users/impl/UserDaoImpl.hibernate.xml
+2014-04-19 11:48:39,821 INFO  [Configuration.java:1575] : Configured SessionFactory: null
+2014-04-19 11:48:39,823 INFO  [HibernateSearchEventListenerRegister.java:53] : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-04-19 11:48:39,860 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserRole
+2014-04-19 11:48:39,878 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserRole on table oba_user_roles
+2014-04-19 11:48:39,895 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.User
+2014-04-19 11:48:39,896 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.User on table oba_users
+2014-04-19 11:48:39,920 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserIndex
+2014-04-19 11:48:39,921 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserIndex on table oba_user_indices
+2014-04-19 11:48:39,953 INFO  [CollectionBinder.java:650] : Mapping collection: org.onebusaway.users.model.User.userIndices -> oba_user_indices
+2014-04-19 11:48:39,954 INFO  [AnnotationConfiguration.java:369] : Hibernate Validator not found: ignoring
+2014-04-19 11:48:39,970 INFO  [DriverManagerConnectionProvider.java:64] : Using Hibernate built-in connection pool (not for production use!)
+2014-04-19 11:48:39,971 INFO  [DriverManagerConnectionProvider.java:65] : Hibernate connection pool size: 1
+2014-04-19 11:48:39,971 INFO  [DriverManagerConnectionProvider.java:68] : autocommit mode: false
+2014-04-19 11:48:39,974 INFO  [DriverManagerConnectionProvider.java:103] : using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:39,975 INFO  [DriverManagerConnectionProvider.java:109] : connection properties: {user=sa, password=****}
+2014-04-19 11:48:40,153 INFO  [SettingsFactory.java:116] : RDBMS: HSQL Database Engine, version: 2.2.8
+2014-04-19 11:48:40,153 INFO  [SettingsFactory.java:117] : JDBC driver: HSQL Database Engine Driver, version: 2.2.8
+2014-04-19 11:48:40,160 INFO  [Dialect.java:175] : Using dialect: org.hibernate.dialect.HSQLDialect
+2014-04-19 11:48:40,162 INFO  [TransactionFactoryFactory.java:59] : Using default transaction strategy (direct JDBC transactions)
+2014-04-19 11:48:40,163 INFO  [TransactionManagerLookupFactory.java:80] : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-04-19 11:48:40,164 INFO  [SettingsFactory.java:170] : Automatic flush during beforeCompletion(): disabled
+2014-04-19 11:48:40,164 INFO  [SettingsFactory.java:174] : Automatic session close at end of transaction: disabled
+2014-04-19 11:48:40,164 INFO  [SettingsFactory.java:181] : JDBC batch size: 15
+2014-04-19 11:48:40,164 INFO  [SettingsFactory.java:184] : JDBC batch updates for versioned data: disabled
+2014-04-19 11:48:40,165 INFO  [SettingsFactory.java:189] : Scrollable result sets: enabled
+2014-04-19 11:48:40,165 INFO  [SettingsFactory.java:197] : JDBC3 getGeneratedKeys(): enabled
+2014-04-19 11:48:40,165 INFO  [SettingsFactory.java:205] : Connection release mode: auto
+2014-04-19 11:48:40,165 INFO  [SettingsFactory.java:232] : Default batch fetch size: 1
+2014-04-19 11:48:40,166 INFO  [SettingsFactory.java:236] : Generate SQL with comments: disabled
+2014-04-19 11:48:40,166 INFO  [SettingsFactory.java:240] : Order SQL updates by primary key: disabled
+2014-04-19 11:48:40,166 INFO  [SettingsFactory.java:244] : Order SQL inserts for batching: disabled
+2014-04-19 11:48:40,166 INFO  [SettingsFactory.java:420] : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-04-19 11:48:40,167 INFO  [ASTQueryTranslatorFactory.java:47] : Using ASTQueryTranslatorFactory
+2014-04-19 11:48:40,168 INFO  [SettingsFactory.java:252] : Query language substitutions: {}
+2014-04-19 11:48:40,168 INFO  [SettingsFactory.java:257] : JPA-QL strict compliance: disabled
+2014-04-19 11:48:40,168 INFO  [SettingsFactory.java:262] : Second-level cache: disabled
+2014-04-19 11:48:40,168 INFO  [SettingsFactory.java:266] : Query cache: disabled
+2014-04-19 11:48:40,168 INFO  [SettingsFactory.java:405] : Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-04-19 11:48:40,169 INFO  [SettingsFactory.java:276] : Optimize cache for minimal puts: disabled
+2014-04-19 11:48:40,169 INFO  [SettingsFactory.java:285] : Structured second-level cache entries: disabled
+2014-04-19 11:48:40,171 INFO  [SettingsFactory.java:314] : Statistics: disabled
+2014-04-19 11:48:40,171 INFO  [SettingsFactory.java:318] : Deleted entity synthetic identifier rollback: disabled
+2014-04-19 11:48:40,172 INFO  [SettingsFactory.java:333] : Default entity-mode: pojo
+2014-04-19 11:48:40,172 INFO  [SettingsFactory.java:337] : Named query checking : enabled
+2014-04-19 11:48:40,196 INFO  [SessionFactoryImpl.java:187] : building session factory
+2014-04-19 11:48:40,295 INFO  [SessionFactoryObjectFactory.java:105] : Not binding factory to JNDI, no JNDI name configured
+2014-04-19 11:48:40,299 INFO  [SchemaExport.java:226] : Running hbm2ddl schema export
+2014-04-19 11:48:40,299 INFO  [SchemaExport.java:251] : exporting generated schema to database
+2014-04-19 11:48:40,304 INFO  [SchemaExport.java:268] : schema export complete
+2014-04-19 11:48:40,473 INFO  [SessionFactoryImpl.java:805] : closing
+2014-04-19 11:48:40,474 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,475 INFO  [Configuration.java:1460] : configuring from resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,475 INFO  [Configuration.java:1437] : Configuration resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,478 INFO  [Configuration.java:586] : Reading mappings from resource : org/onebusaway/users/impl/UserDaoImpl.hibernate.xml
+2014-04-19 11:48:40,490 INFO  [Configuration.java:1575] : Configured SessionFactory: null
+2014-04-19 11:48:40,491 INFO  [HibernateSearchEventListenerRegister.java:53] : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-04-19 11:48:40,491 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserRole
+2014-04-19 11:48:40,492 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserRole on table oba_user_roles
+2014-04-19 11:48:40,492 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.User
+2014-04-19 11:48:40,492 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.User on table oba_users
+2014-04-19 11:48:40,494 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserIndex
+2014-04-19 11:48:40,495 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserIndex on table oba_user_indices
+2014-04-19 11:48:40,496 INFO  [CollectionBinder.java:650] : Mapping collection: org.onebusaway.users.model.User.userIndices -> oba_user_indices
+2014-04-19 11:48:40,496 INFO  [AnnotationConfiguration.java:369] : Hibernate Validator not found: ignoring
+2014-04-19 11:48:40,497 INFO  [DriverManagerConnectionProvider.java:64] : Using Hibernate built-in connection pool (not for production use!)
+2014-04-19 11:48:40,497 INFO  [DriverManagerConnectionProvider.java:65] : Hibernate connection pool size: 1
+2014-04-19 11:48:40,497 INFO  [DriverManagerConnectionProvider.java:68] : autocommit mode: false
+2014-04-19 11:48:40,498 INFO  [DriverManagerConnectionProvider.java:103] : using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,498 INFO  [DriverManagerConnectionProvider.java:109] : connection properties: {user=sa, password=****}
+2014-04-19 11:48:40,498 INFO  [SettingsFactory.java:116] : RDBMS: HSQL Database Engine, version: 2.2.8
+2014-04-19 11:48:40,499 INFO  [SettingsFactory.java:117] : JDBC driver: HSQL Database Engine Driver, version: 2.2.8
+2014-04-19 11:48:40,499 INFO  [Dialect.java:175] : Using dialect: org.hibernate.dialect.HSQLDialect
+2014-04-19 11:48:40,499 INFO  [TransactionFactoryFactory.java:59] : Using default transaction strategy (direct JDBC transactions)
+2014-04-19 11:48:40,499 INFO  [TransactionManagerLookupFactory.java:80] : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-04-19 11:48:40,500 INFO  [SettingsFactory.java:170] : Automatic flush during beforeCompletion(): disabled
+2014-04-19 11:48:40,500 INFO  [SettingsFactory.java:174] : Automatic session close at end of transaction: disabled
+2014-04-19 11:48:40,500 INFO  [SettingsFactory.java:181] : JDBC batch size: 15
+2014-04-19 11:48:40,500 INFO  [SettingsFactory.java:184] : JDBC batch updates for versioned data: disabled
+2014-04-19 11:48:40,500 INFO  [SettingsFactory.java:189] : Scrollable result sets: enabled
+2014-04-19 11:48:40,500 INFO  [SettingsFactory.java:197] : JDBC3 getGeneratedKeys(): enabled
+2014-04-19 11:48:40,501 INFO  [SettingsFactory.java:205] : Connection release mode: auto
+2014-04-19 11:48:40,501 INFO  [SettingsFactory.java:232] : Default batch fetch size: 1
+2014-04-19 11:48:40,501 INFO  [SettingsFactory.java:236] : Generate SQL with comments: disabled
+2014-04-19 11:48:40,501 INFO  [SettingsFactory.java:240] : Order SQL updates by primary key: disabled
+2014-04-19 11:48:40,501 INFO  [SettingsFactory.java:244] : Order SQL inserts for batching: disabled
+2014-04-19 11:48:40,501 INFO  [SettingsFactory.java:420] : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-04-19 11:48:40,502 INFO  [ASTQueryTranslatorFactory.java:47] : Using ASTQueryTranslatorFactory
+2014-04-19 11:48:40,502 INFO  [SettingsFactory.java:252] : Query language substitutions: {}
+2014-04-19 11:48:40,502 INFO  [SettingsFactory.java:257] : JPA-QL strict compliance: disabled
+2014-04-19 11:48:40,502 INFO  [SettingsFactory.java:262] : Second-level cache: disabled
+2014-04-19 11:48:40,502 INFO  [SettingsFactory.java:266] : Query cache: disabled
+2014-04-19 11:48:40,502 INFO  [SettingsFactory.java:405] : Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-04-19 11:48:40,503 INFO  [SettingsFactory.java:276] : Optimize cache for minimal puts: disabled
+2014-04-19 11:48:40,503 INFO  [SettingsFactory.java:285] : Structured second-level cache entries: disabled
+2014-04-19 11:48:40,503 INFO  [SettingsFactory.java:314] : Statistics: disabled
+2014-04-19 11:48:40,503 INFO  [SettingsFactory.java:318] : Deleted entity synthetic identifier rollback: disabled
+2014-04-19 11:48:40,503 INFO  [SettingsFactory.java:333] : Default entity-mode: pojo
+2014-04-19 11:48:40,503 INFO  [SettingsFactory.java:337] : Named query checking : enabled
+2014-04-19 11:48:40,506 INFO  [SessionFactoryImpl.java:187] : building session factory
+2014-04-19 11:48:40,511 INFO  [SessionFactoryObjectFactory.java:105] : Not binding factory to JNDI, no JNDI name configured
+2014-04-19 11:48:40,512 INFO  [SchemaExport.java:226] : Running hbm2ddl schema export
+2014-04-19 11:48:40,513 INFO  [SchemaExport.java:251] : exporting generated schema to database
+2014-04-19 11:48:40,517 INFO  [SchemaExport.java:268] : schema export complete
+2014-04-19 11:48:40,534 INFO  [SessionFactoryImpl.java:805] : closing
+2014-04-19 11:48:40,534 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,535 INFO  [Configuration.java:1460] : configuring from resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,535 INFO  [Configuration.java:1437] : Configuration resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,538 INFO  [Configuration.java:586] : Reading mappings from resource : org/onebusaway/users/impl/UserDaoImpl.hibernate.xml
+2014-04-19 11:48:40,546 INFO  [Configuration.java:1575] : Configured SessionFactory: null
+2014-04-19 11:48:40,547 INFO  [HibernateSearchEventListenerRegister.java:53] : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-04-19 11:48:40,548 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserRole
+2014-04-19 11:48:40,548 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserRole on table oba_user_roles
+2014-04-19 11:48:40,548 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.User
+2014-04-19 11:48:40,548 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.User on table oba_users
+2014-04-19 11:48:40,550 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserIndex
+2014-04-19 11:48:40,550 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserIndex on table oba_user_indices
+2014-04-19 11:48:40,551 INFO  [CollectionBinder.java:650] : Mapping collection: org.onebusaway.users.model.User.userIndices -> oba_user_indices
+2014-04-19 11:48:40,552 INFO  [AnnotationConfiguration.java:369] : Hibernate Validator not found: ignoring
+2014-04-19 11:48:40,552 INFO  [DriverManagerConnectionProvider.java:64] : Using Hibernate built-in connection pool (not for production use!)
+2014-04-19 11:48:40,552 INFO  [DriverManagerConnectionProvider.java:65] : Hibernate connection pool size: 1
+2014-04-19 11:48:40,553 INFO  [DriverManagerConnectionProvider.java:68] : autocommit mode: false
+2014-04-19 11:48:40,553 INFO  [DriverManagerConnectionProvider.java:103] : using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,553 INFO  [DriverManagerConnectionProvider.java:109] : connection properties: {user=sa, password=****}
+2014-04-19 11:48:40,553 INFO  [SettingsFactory.java:116] : RDBMS: HSQL Database Engine, version: 2.2.8
+2014-04-19 11:48:40,554 INFO  [SettingsFactory.java:117] : JDBC driver: HSQL Database Engine Driver, version: 2.2.8
+2014-04-19 11:48:40,554 INFO  [Dialect.java:175] : Using dialect: org.hibernate.dialect.HSQLDialect
+2014-04-19 11:48:40,554 INFO  [TransactionFactoryFactory.java:59] : Using default transaction strategy (direct JDBC transactions)
+2014-04-19 11:48:40,554 INFO  [TransactionManagerLookupFactory.java:80] : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-04-19 11:48:40,554 INFO  [SettingsFactory.java:170] : Automatic flush during beforeCompletion(): disabled
+2014-04-19 11:48:40,555 INFO  [SettingsFactory.java:174] : Automatic session close at end of transaction: disabled
+2014-04-19 11:48:40,555 INFO  [SettingsFactory.java:181] : JDBC batch size: 15
+2014-04-19 11:48:40,555 INFO  [SettingsFactory.java:184] : JDBC batch updates for versioned data: disabled
+2014-04-19 11:48:40,555 INFO  [SettingsFactory.java:189] : Scrollable result sets: enabled
+2014-04-19 11:48:40,555 INFO  [SettingsFactory.java:197] : JDBC3 getGeneratedKeys(): enabled
+2014-04-19 11:48:40,555 INFO  [SettingsFactory.java:205] : Connection release mode: auto
+2014-04-19 11:48:40,555 INFO  [SettingsFactory.java:232] : Default batch fetch size: 1
+2014-04-19 11:48:40,556 INFO  [SettingsFactory.java:236] : Generate SQL with comments: disabled
+2014-04-19 11:48:40,556 INFO  [SettingsFactory.java:240] : Order SQL updates by primary key: disabled
+2014-04-19 11:48:40,556 INFO  [SettingsFactory.java:244] : Order SQL inserts for batching: disabled
+2014-04-19 11:48:40,556 INFO  [SettingsFactory.java:420] : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-04-19 11:48:40,556 INFO  [ASTQueryTranslatorFactory.java:47] : Using ASTQueryTranslatorFactory
+2014-04-19 11:48:40,556 INFO  [SettingsFactory.java:252] : Query language substitutions: {}
+2014-04-19 11:48:40,556 INFO  [SettingsFactory.java:257] : JPA-QL strict compliance: disabled
+2014-04-19 11:48:40,556 INFO  [SettingsFactory.java:262] : Second-level cache: disabled
+2014-04-19 11:48:40,557 INFO  [SettingsFactory.java:266] : Query cache: disabled
+2014-04-19 11:48:40,557 INFO  [SettingsFactory.java:405] : Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-04-19 11:48:40,557 INFO  [SettingsFactory.java:276] : Optimize cache for minimal puts: disabled
+2014-04-19 11:48:40,557 INFO  [SettingsFactory.java:285] : Structured second-level cache entries: disabled
+2014-04-19 11:48:40,557 INFO  [SettingsFactory.java:314] : Statistics: disabled
+2014-04-19 11:48:40,557 INFO  [SettingsFactory.java:318] : Deleted entity synthetic identifier rollback: disabled
+2014-04-19 11:48:40,558 INFO  [SettingsFactory.java:333] : Default entity-mode: pojo
+2014-04-19 11:48:40,558 INFO  [SettingsFactory.java:337] : Named query checking : enabled
+2014-04-19 11:48:40,560 INFO  [SessionFactoryImpl.java:187] : building session factory
+2014-04-19 11:48:40,564 INFO  [SessionFactoryObjectFactory.java:105] : Not binding factory to JNDI, no JNDI name configured
+2014-04-19 11:48:40,566 INFO  [SchemaExport.java:226] : Running hbm2ddl schema export
+2014-04-19 11:48:40,566 INFO  [SchemaExport.java:251] : exporting generated schema to database
+2014-04-19 11:48:40,570 INFO  [SchemaExport.java:268] : schema export complete
+2014-04-19 11:48:40,580 INFO  [SessionFactoryImpl.java:805] : closing
+2014-04-19 11:48:40,580 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,580 INFO  [Configuration.java:1460] : configuring from resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,580 INFO  [Configuration.java:1437] : Configuration resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,583 INFO  [Configuration.java:586] : Reading mappings from resource : org/onebusaway/users/impl/UserDaoImpl.hibernate.xml
+2014-04-19 11:48:40,591 INFO  [Configuration.java:1575] : Configured SessionFactory: null
+2014-04-19 11:48:40,592 INFO  [HibernateSearchEventListenerRegister.java:53] : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-04-19 11:48:40,592 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserRole
+2014-04-19 11:48:40,592 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserRole on table oba_user_roles
+2014-04-19 11:48:40,593 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.User
+2014-04-19 11:48:40,593 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.User on table oba_users
+2014-04-19 11:48:40,595 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserIndex
+2014-04-19 11:48:40,595 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserIndex on table oba_user_indices
+2014-04-19 11:48:40,596 INFO  [CollectionBinder.java:650] : Mapping collection: org.onebusaway.users.model.User.userIndices -> oba_user_indices
+2014-04-19 11:48:40,596 INFO  [AnnotationConfiguration.java:369] : Hibernate Validator not found: ignoring
+2014-04-19 11:48:40,597 INFO  [DriverManagerConnectionProvider.java:64] : Using Hibernate built-in connection pool (not for production use!)
+2014-04-19 11:48:40,597 INFO  [DriverManagerConnectionProvider.java:65] : Hibernate connection pool size: 1
+2014-04-19 11:48:40,597 INFO  [DriverManagerConnectionProvider.java:68] : autocommit mode: false
+2014-04-19 11:48:40,597 INFO  [DriverManagerConnectionProvider.java:103] : using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,597 INFO  [DriverManagerConnectionProvider.java:109] : connection properties: {user=sa, password=****}
+2014-04-19 11:48:40,598 INFO  [SettingsFactory.java:116] : RDBMS: HSQL Database Engine, version: 2.2.8
+2014-04-19 11:48:40,598 INFO  [SettingsFactory.java:117] : JDBC driver: HSQL Database Engine Driver, version: 2.2.8
+2014-04-19 11:48:40,598 INFO  [Dialect.java:175] : Using dialect: org.hibernate.dialect.HSQLDialect
+2014-04-19 11:48:40,598 INFO  [TransactionFactoryFactory.java:59] : Using default transaction strategy (direct JDBC transactions)
+2014-04-19 11:48:40,599 INFO  [TransactionManagerLookupFactory.java:80] : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-04-19 11:48:40,599 INFO  [SettingsFactory.java:170] : Automatic flush during beforeCompletion(): disabled
+2014-04-19 11:48:40,599 INFO  [SettingsFactory.java:174] : Automatic session close at end of transaction: disabled
+2014-04-19 11:48:40,599 INFO  [SettingsFactory.java:181] : JDBC batch size: 15
+2014-04-19 11:48:40,599 INFO  [SettingsFactory.java:184] : JDBC batch updates for versioned data: disabled
+2014-04-19 11:48:40,599 INFO  [SettingsFactory.java:189] : Scrollable result sets: enabled
+2014-04-19 11:48:40,599 INFO  [SettingsFactory.java:197] : JDBC3 getGeneratedKeys(): enabled
+2014-04-19 11:48:40,599 INFO  [SettingsFactory.java:205] : Connection release mode: auto
+2014-04-19 11:48:40,600 INFO  [SettingsFactory.java:232] : Default batch fetch size: 1
+2014-04-19 11:48:40,600 INFO  [SettingsFactory.java:236] : Generate SQL with comments: disabled
+2014-04-19 11:48:40,600 INFO  [SettingsFactory.java:240] : Order SQL updates by primary key: disabled
+2014-04-19 11:48:40,600 INFO  [SettingsFactory.java:244] : Order SQL inserts for batching: disabled
+2014-04-19 11:48:40,600 INFO  [SettingsFactory.java:420] : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-04-19 11:48:40,600 INFO  [ASTQueryTranslatorFactory.java:47] : Using ASTQueryTranslatorFactory
+2014-04-19 11:48:40,600 INFO  [SettingsFactory.java:252] : Query language substitutions: {}
+2014-04-19 11:48:40,601 INFO  [SettingsFactory.java:257] : JPA-QL strict compliance: disabled
+2014-04-19 11:48:40,601 INFO  [SettingsFactory.java:262] : Second-level cache: disabled
+2014-04-19 11:48:40,601 INFO  [SettingsFactory.java:266] : Query cache: disabled
+2014-04-19 11:48:40,601 INFO  [SettingsFactory.java:405] : Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-04-19 11:48:40,601 INFO  [SettingsFactory.java:276] : Optimize cache for minimal puts: disabled
+2014-04-19 11:48:40,601 INFO  [SettingsFactory.java:285] : Structured second-level cache entries: disabled
+2014-04-19 11:48:40,601 INFO  [SettingsFactory.java:314] : Statistics: disabled
+2014-04-19 11:48:40,602 INFO  [SettingsFactory.java:318] : Deleted entity synthetic identifier rollback: disabled
+2014-04-19 11:48:40,602 INFO  [SettingsFactory.java:333] : Default entity-mode: pojo
+2014-04-19 11:48:40,602 INFO  [SettingsFactory.java:337] : Named query checking : enabled
+2014-04-19 11:48:40,604 INFO  [SessionFactoryImpl.java:187] : building session factory
+2014-04-19 11:48:40,609 INFO  [SessionFactoryObjectFactory.java:105] : Not binding factory to JNDI, no JNDI name configured
+2014-04-19 11:48:40,610 INFO  [SchemaExport.java:226] : Running hbm2ddl schema export
+2014-04-19 11:48:40,610 INFO  [SchemaExport.java:251] : exporting generated schema to database
+2014-04-19 11:48:40,614 INFO  [SchemaExport.java:268] : schema export complete
+2014-04-19 11:48:40,627 INFO  [SessionFactoryImpl.java:805] : closing
+2014-04-19 11:48:40,627 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,628 INFO  [Configuration.java:1460] : configuring from resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,628 INFO  [Configuration.java:1437] : Configuration resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,631 INFO  [Configuration.java:586] : Reading mappings from resource : org/onebusaway/users/impl/UserDaoImpl.hibernate.xml
+2014-04-19 11:48:40,638 INFO  [Configuration.java:1575] : Configured SessionFactory: null
+2014-04-19 11:48:40,639 INFO  [HibernateSearchEventListenerRegister.java:53] : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-04-19 11:48:40,639 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserRole
+2014-04-19 11:48:40,639 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserRole on table oba_user_roles
+2014-04-19 11:48:40,640 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.User
+2014-04-19 11:48:40,640 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.User on table oba_users
+2014-04-19 11:48:40,642 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserIndex
+2014-04-19 11:48:40,642 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserIndex on table oba_user_indices
+2014-04-19 11:48:40,643 INFO  [CollectionBinder.java:650] : Mapping collection: org.onebusaway.users.model.User.userIndices -> oba_user_indices
+2014-04-19 11:48:40,643 INFO  [AnnotationConfiguration.java:369] : Hibernate Validator not found: ignoring
+2014-04-19 11:48:40,644 INFO  [DriverManagerConnectionProvider.java:64] : Using Hibernate built-in connection pool (not for production use!)
+2014-04-19 11:48:40,644 INFO  [DriverManagerConnectionProvider.java:65] : Hibernate connection pool size: 1
+2014-04-19 11:48:40,644 INFO  [DriverManagerConnectionProvider.java:68] : autocommit mode: false
+2014-04-19 11:48:40,644 INFO  [DriverManagerConnectionProvider.java:103] : using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,644 INFO  [DriverManagerConnectionProvider.java:109] : connection properties: {user=sa, password=****}
+2014-04-19 11:48:40,645 INFO  [SettingsFactory.java:116] : RDBMS: HSQL Database Engine, version: 2.2.8
+2014-04-19 11:48:40,645 INFO  [SettingsFactory.java:117] : JDBC driver: HSQL Database Engine Driver, version: 2.2.8
+2014-04-19 11:48:40,645 INFO  [Dialect.java:175] : Using dialect: org.hibernate.dialect.HSQLDialect
+2014-04-19 11:48:40,645 INFO  [TransactionFactoryFactory.java:59] : Using default transaction strategy (direct JDBC transactions)
+2014-04-19 11:48:40,645 INFO  [TransactionManagerLookupFactory.java:80] : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-04-19 11:48:40,645 INFO  [SettingsFactory.java:170] : Automatic flush during beforeCompletion(): disabled
+2014-04-19 11:48:40,645 INFO  [SettingsFactory.java:174] : Automatic session close at end of transaction: disabled
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:181] : JDBC batch size: 15
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:184] : JDBC batch updates for versioned data: disabled
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:189] : Scrollable result sets: enabled
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:197] : JDBC3 getGeneratedKeys(): enabled
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:205] : Connection release mode: auto
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:232] : Default batch fetch size: 1
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:236] : Generate SQL with comments: disabled
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:240] : Order SQL updates by primary key: disabled
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:244] : Order SQL inserts for batching: disabled
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:420] : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-04-19 11:48:40,646 INFO  [ASTQueryTranslatorFactory.java:47] : Using ASTQueryTranslatorFactory
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:252] : Query language substitutions: {}
+2014-04-19 11:48:40,646 INFO  [SettingsFactory.java:257] : JPA-QL strict compliance: disabled
+2014-04-19 11:48:40,647 INFO  [SettingsFactory.java:262] : Second-level cache: disabled
+2014-04-19 11:48:40,647 INFO  [SettingsFactory.java:266] : Query cache: disabled
+2014-04-19 11:48:40,647 INFO  [SettingsFactory.java:405] : Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-04-19 11:48:40,647 INFO  [SettingsFactory.java:276] : Optimize cache for minimal puts: disabled
+2014-04-19 11:48:40,647 INFO  [SettingsFactory.java:285] : Structured second-level cache entries: disabled
+2014-04-19 11:48:40,647 INFO  [SettingsFactory.java:314] : Statistics: disabled
+2014-04-19 11:48:40,647 INFO  [SettingsFactory.java:318] : Deleted entity synthetic identifier rollback: disabled
+2014-04-19 11:48:40,647 INFO  [SettingsFactory.java:333] : Default entity-mode: pojo
+2014-04-19 11:48:40,647 INFO  [SettingsFactory.java:337] : Named query checking : enabled
+2014-04-19 11:48:40,650 INFO  [SessionFactoryImpl.java:187] : building session factory
+2014-04-19 11:48:40,654 INFO  [SessionFactoryObjectFactory.java:105] : Not binding factory to JNDI, no JNDI name configured
+2014-04-19 11:48:40,655 INFO  [SchemaExport.java:226] : Running hbm2ddl schema export
+2014-04-19 11:48:40,655 INFO  [SchemaExport.java:251] : exporting generated schema to database
+2014-04-19 11:48:40,659 INFO  [SchemaExport.java:268] : schema export complete
+2014-04-19 11:48:40,759 INFO  [SessionFactoryImpl.java:805] : closing
+2014-04-19 11:48:40,759 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,759 INFO  [Configuration.java:1460] : configuring from resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,760 INFO  [Configuration.java:1437] : Configuration resource: org/onebusaway/users/hibernate-configuration.xml
+2014-04-19 11:48:40,762 INFO  [Configuration.java:586] : Reading mappings from resource : org/onebusaway/users/impl/UserDaoImpl.hibernate.xml
+2014-04-19 11:48:40,769 INFO  [Configuration.java:1575] : Configured SessionFactory: null
+2014-04-19 11:48:40,770 INFO  [HibernateSearchEventListenerRegister.java:53] : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-04-19 11:48:40,770 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserRole
+2014-04-19 11:48:40,771 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserRole on table oba_user_roles
+2014-04-19 11:48:40,772 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.User
+2014-04-19 11:48:40,772 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.User on table oba_users
+2014-04-19 11:48:40,774 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.users.model.UserIndex
+2014-04-19 11:48:40,774 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.users.model.UserIndex on table oba_user_indices
+2014-04-19 11:48:40,775 INFO  [CollectionBinder.java:650] : Mapping collection: org.onebusaway.users.model.User.userIndices -> oba_user_indices
+2014-04-19 11:48:40,776 INFO  [AnnotationConfiguration.java:369] : Hibernate Validator not found: ignoring
+2014-04-19 11:48:40,776 INFO  [DriverManagerConnectionProvider.java:64] : Using Hibernate built-in connection pool (not for production use!)
+2014-04-19 11:48:40,776 INFO  [DriverManagerConnectionProvider.java:65] : Hibernate connection pool size: 1
+2014-04-19 11:48:40,776 INFO  [DriverManagerConnectionProvider.java:68] : autocommit mode: false
+2014-04-19 11:48:40,776 INFO  [DriverManagerConnectionProvider.java:103] : using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,777 INFO  [DriverManagerConnectionProvider.java:109] : connection properties: {user=sa, password=****}
+2014-04-19 11:48:40,777 INFO  [SettingsFactory.java:116] : RDBMS: HSQL Database Engine, version: 2.2.8
+2014-04-19 11:48:40,777 INFO  [SettingsFactory.java:117] : JDBC driver: HSQL Database Engine Driver, version: 2.2.8
+2014-04-19 11:48:40,777 INFO  [Dialect.java:175] : Using dialect: org.hibernate.dialect.HSQLDialect
+2014-04-19 11:48:40,777 INFO  [TransactionFactoryFactory.java:59] : Using default transaction strategy (direct JDBC transactions)
+2014-04-19 11:48:40,777 INFO  [TransactionManagerLookupFactory.java:80] : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:170] : Automatic flush during beforeCompletion(): disabled
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:174] : Automatic session close at end of transaction: disabled
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:181] : JDBC batch size: 15
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:184] : JDBC batch updates for versioned data: disabled
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:189] : Scrollable result sets: enabled
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:197] : JDBC3 getGeneratedKeys(): enabled
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:205] : Connection release mode: auto
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:232] : Default batch fetch size: 1
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:236] : Generate SQL with comments: disabled
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:240] : Order SQL updates by primary key: disabled
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:244] : Order SQL inserts for batching: disabled
+2014-04-19 11:48:40,778 INFO  [SettingsFactory.java:420] : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-04-19 11:48:40,778 INFO  [ASTQueryTranslatorFactory.java:47] : Using ASTQueryTranslatorFactory
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:252] : Query language substitutions: {}
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:257] : JPA-QL strict compliance: disabled
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:262] : Second-level cache: disabled
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:266] : Query cache: disabled
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:405] : Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:276] : Optimize cache for minimal puts: disabled
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:285] : Structured second-level cache entries: disabled
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:314] : Statistics: disabled
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:318] : Deleted entity synthetic identifier rollback: disabled
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:333] : Default entity-mode: pojo
+2014-04-19 11:48:40,779 INFO  [SettingsFactory.java:337] : Named query checking : enabled
+2014-04-19 11:48:40,781 INFO  [SessionFactoryImpl.java:187] : building session factory
+2014-04-19 11:48:40,785 INFO  [SessionFactoryObjectFactory.java:105] : Not binding factory to JNDI, no JNDI name configured
+2014-04-19 11:48:40,786 INFO  [SchemaExport.java:226] : Running hbm2ddl schema export
+2014-04-19 11:48:40,786 INFO  [SchemaExport.java:251] : exporting generated schema to database
+2014-04-19 11:48:40,790 INFO  [SchemaExport.java:268] : schema export complete
+2014-04-19 11:48:40,807 INFO  [SessionFactoryImpl.java:805] : closing
+2014-04-19 11:48:40,807 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.122 sec
+Running org.onebusaway.users.impl.UserPropertiesMigrationImplTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.onebusaway.users.impl.UserServiceImplTest
+2014-04-19 11:48:40,830 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,831 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,831 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,831 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,831 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:40,831 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+
+Results :
+
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ onebusaway-users ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-geocoder 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-geocoder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-geocoder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-geocoder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-geocoder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-geocoder ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-geocoder\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.onebusaway.geocoder.impl.YahooGeocoderImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.onebusaway.geocoder.impl.DatabaseCachingGeocoderImplTest
+2014-04-19 11:48:41,185 INFO  [Version.java:15] : Hibernate Annotations 3.4.0.GA
+2014-04-19 11:48:41,193 INFO  [Environment.java:543] : Hibernate 3.3.1.GA
+2014-04-19 11:48:41,196 INFO  [Environment.java:576] : hibernate.properties not found
+2014-04-19 11:48:41,198 INFO  [Environment.java:709] : Bytecode provider name : javassist
+2014-04-19 11:48:41,200 INFO  [Environment.java:627] : using JDK 1.4 java.sql.Timestamp handling
+2014-04-19 11:48:41,233 INFO  [Version.java:14] : Hibernate Commons Annotations 3.1.0.GA
+2014-04-19 11:48:41,234 INFO  [Configuration.java:1460] : configuring from resource: org/onebusaway/geocoder/impl/hibernate-configuration.xml
+2014-04-19 11:48:41,234 INFO  [Configuration.java:1437] : Configuration resource: org/onebusaway/geocoder/impl/hibernate-configuration.xml
+2014-04-19 11:48:41,283 INFO  [Configuration.java:1575] : Configured SessionFactory: null
+2014-04-19 11:48:41,285 INFO  [HibernateSearchEventListenerRegister.java:53] : Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2014-04-19 11:48:41,308 INFO  [AnnotationBinder.java:419] : Binding entity from annotated class: org.onebusaway.geocoder.model.GeocoderResultsEntity
+2014-04-19 11:48:41,329 INFO  [EntityBinder.java:422] : Bind entity org.onebusaway.geocoder.model.GeocoderResultsEntity on table oba_geocoder_results
+2014-04-19 11:48:41,352 INFO  [AnnotationConfiguration.java:369] : Hibernate Validator not found: ignoring
+2014-04-19 11:48:41,382 INFO  [DriverManagerConnectionProvider.java:64] : Using Hibernate built-in connection pool (not for production use!)
+2014-04-19 11:48:41,382 INFO  [DriverManagerConnectionProvider.java:65] : Hibernate connection pool size: 1
+2014-04-19 11:48:41,382 INFO  [DriverManagerConnectionProvider.java:68] : autocommit mode: false
+2014-04-19 11:48:41,386 INFO  [DriverManagerConnectionProvider.java:103] : using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:mem:org_onebusaway_temporary
+2014-04-19 11:48:41,386 INFO  [DriverManagerConnectionProvider.java:109] : connection properties: {user=sa, password=****}
+2014-04-19 11:48:41,567 INFO  [SettingsFactory.java:116] : RDBMS: HSQL Database Engine, version: 2.2.8
+2014-04-19 11:48:41,568 INFO  [SettingsFactory.java:117] : JDBC driver: HSQL Database Engine Driver, version: 2.2.8
+2014-04-19 11:48:41,575 INFO  [Dialect.java:175] : Using dialect: org.hibernate.dialect.HSQLDialect
+2014-04-19 11:48:41,577 INFO  [TransactionFactoryFactory.java:59] : Using default transaction strategy (direct JDBC transactions)
+2014-04-19 11:48:41,578 INFO  [TransactionManagerLookupFactory.java:80] : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2014-04-19 11:48:41,578 INFO  [SettingsFactory.java:170] : Automatic flush during beforeCompletion(): disabled
+2014-04-19 11:48:41,579 INFO  [SettingsFactory.java:174] : Automatic session close at end of transaction: disabled
+2014-04-19 11:48:41,579 INFO  [SettingsFactory.java:181] : JDBC batch size: 15
+2014-04-19 11:48:41,579 INFO  [SettingsFactory.java:184] : JDBC batch updates for versioned data: disabled
+2014-04-19 11:48:41,580 INFO  [SettingsFactory.java:189] : Scrollable result sets: enabled
+2014-04-19 11:48:41,580 INFO  [SettingsFactory.java:197] : JDBC3 getGeneratedKeys(): enabled
+2014-04-19 11:48:41,580 INFO  [SettingsFactory.java:205] : Connection release mode: auto
+2014-04-19 11:48:41,580 INFO  [SettingsFactory.java:232] : Default batch fetch size: 1
+2014-04-19 11:48:41,580 INFO  [SettingsFactory.java:236] : Generate SQL with comments: disabled
+2014-04-19 11:48:41,581 INFO  [SettingsFactory.java:240] : Order SQL updates by primary key: disabled
+2014-04-19 11:48:41,581 INFO  [SettingsFactory.java:244] : Order SQL inserts for batching: disabled
+2014-04-19 11:48:41,581 INFO  [SettingsFactory.java:420] : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2014-04-19 11:48:41,582 INFO  [ASTQueryTranslatorFactory.java:47] : Using ASTQueryTranslatorFactory
+2014-04-19 11:48:41,582 INFO  [SettingsFactory.java:252] : Query language substitutions: {}
+2014-04-19 11:48:41,582 INFO  [SettingsFactory.java:257] : JPA-QL strict compliance: disabled
+2014-04-19 11:48:41,583 INFO  [SettingsFactory.java:262] : Second-level cache: enabled
+2014-04-19 11:48:41,583 INFO  [SettingsFactory.java:266] : Query cache: disabled
+2014-04-19 11:48:41,585 INFO  [SettingsFactory.java:405] : Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2014-04-19 11:48:41,585 INFO  [RegionFactoryCacheProviderBridge.java:61] : Cache provider: org.hibernate.cache.NoCacheProvider
+2014-04-19 11:48:41,586 INFO  [SettingsFactory.java:276] : Optimize cache for minimal puts: disabled
+2014-04-19 11:48:41,586 INFO  [SettingsFactory.java:285] : Structured second-level cache entries: disabled
+2014-04-19 11:48:41,588 INFO  [SettingsFactory.java:314] : Statistics: disabled
+2014-04-19 11:48:41,588 INFO  [SettingsFactory.java:318] : Deleted entity synthetic identifier rollback: disabled
+2014-04-19 11:48:41,589 INFO  [SettingsFactory.java:333] : Default entity-mode: pojo
+2014-04-19 11:48:41,589 INFO  [SettingsFactory.java:337] : Named query checking : enabled
+2014-04-19 11:48:41,614 INFO  [SessionFactoryImpl.java:187] : building session factory
+2014-04-19 11:48:41,699 INFO  [SessionFactoryObjectFactory.java:105] : Not binding factory to JNDI, no JNDI name configured
+2014-04-19 11:48:41,703 INFO  [SchemaExport.java:226] : Running hbm2ddl schema export
+2014-04-19 11:48:41,704 INFO  [SchemaExport.java:251] : exporting generated schema to database
+2014-04-19 11:48:41,705 INFO  [SchemaExport.java:268] : schema export complete
+2014-04-19 11:48:41,869 INFO  [SessionFactoryImpl.java:805] : closing
+2014-04-19 11:48:41,869 INFO  [DriverManagerConnectionProvider.java:170] : cleaning up connection pool: jdbc:hsqldb:mem:org_onebusaway_temporary
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.751 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ onebusaway-geocoder ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-presentation 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-presentation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 58 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-presentation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-presentation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-presentation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-presentation ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-presentation\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.onebusaway.presentation.impl.text.XmlTextModificationsFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.1:jar (default-jar) @ onebusaway-presentation ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building onebusaway-webapp 1.1.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:resources (default-resources) @ onebusaway-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 32 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ onebusaway-webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.2:testResources (default-testResources) @ onebusaway-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program3\onebusaway-application-modules\onebusaway-webapp\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ onebusaway-webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.5:test (default-test) @ onebusaway-webapp ---
+[INFO] Surefire report directory: C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.onebusaway.webapp.gwt.where_library.impl.StopsForRegionServiceImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- gwt-maven-plugin:2.4.0-1-oba:compile (compile) @ onebusaway-webapp ---
+[INFO] org.onebusaway.webapp.gwt.BookmarkEditApplication is up to date. GWT compilation skipped
+[INFO] org.onebusaway.webapp.gwt.OneBusAwayStandardApplication is up to date. GWT compilation skipped
+[INFO] org.onebusaway.webapp.gwt.SearchLocationLibrary is up to date. GWT compilation skipped
+[INFO] org.onebusaway.webapp.gwt.WhereStopFinderRefineViewApplication is up to date. GWT compilation skipped
+[INFO] org.onebusaway.webapp.gwt.WhereStopFinderStandardApplication is up to date. GWT compilation skipped
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.2:unpack (unpack) @ onebusaway-webapp ---
+[INFO] Configured Artifact: org.onebusaway:onebusaway-everylastlogin:gwtloginwidget:0.0.1:jar
+[INFO] Unpacking C:\Users\dule\.m2\repository\org\onebusaway\onebusaway-everylastlogin\0.0.1\onebusaway-everylastlogin-0.0.1-gwtloginwidget.jar to C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\gwt\LoginWidget with includes  and excludes 
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ onebusaway-webapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [onebusaway-webapp] in [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\onebusaway-webapp]
+[INFO] Processing war project
+[INFO] Copying webapp webResources [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target/gwt/org.onebusaway.webapp.gwt.BookmarkEditApplication] to [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\onebusaway-webapp]
+[INFO] Copying webapp webResources [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target/gwt/LoginWidget] to [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\onebusaway-webapp]
+[INFO] Copying webapp webResources [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target/gwt/org.onebusaway.webapp.gwt.OneBusAwayStandardApplication] to [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\onebusaway-webapp]
+[INFO] Copying webapp webResources [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target/gwt/org.onebusaway.webapp.gwt.SearchLocationLibrary] to [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\onebusaway-webapp]
+[INFO] Copying webapp webResources [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target/gwt/org.onebusaway.webapp.gwt.WhereStopFinderRefineViewApplication] to [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\onebusaway-webapp]
+[INFO] Copying webapp webResources [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target/gwt/org.onebusaway.webapp.gwt.WhereStopFinderStandardApplication] to [C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\onebusaway-webapp]
+[INFO] Copying webapp resources [C:\Program3\onebusaway-application-modules\onebusaway-webapp\src\main\webapp]
+[INFO] Webapp assembled in [668 msecs]
+[INFO] Building war: C:\Program3\onebusaway-application-modules\onebusaway-webapp\target\onebusaway-webapp.war
+[WARNING] Warning: selected war files include a WEB-INF/web.xml which will be ignored 
+(webxml attribute is missing from war task, or ignoreWebxml attribute is specified as 'true')
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] onebusaway-application-modules .................... SUCCESS [  0.009 s]
+[INFO] onebusaway-core ................................... SUCCESS [  0.693 s]
+[INFO] onebusaway-geospatial ............................. SUCCESS [  0.317 s]
+[INFO] onebusaway-federations ............................ SUCCESS [ 31.051 s]
+[INFO] onebusaway-realtime-api ........................... SUCCESS [  0.140 s]
+[INFO] onebusaway-transit-data ........................... SUCCESS [  0.185 s]
+[INFO] onebusaway-container .............................. SUCCESS [  0.456 s]
+[INFO] onebusaway-users .................................. SUCCESS [  1.654 s]
+[INFO] onebusaway-geocoder ............................... SUCCESS [  0.978 s]
+[INFO] onebusaway-presentation ........................... SUCCESS [  0.431 s]
+[INFO] onebusaway-webapp ................................. SUCCESS [  4.478 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 40.799 s
+[INFO] Finished at: 2014-04-19T11:48:46-07:00
+[INFO] Final Memory: 35M/1963M
+[INFO] ------------------------------------------------------------------------

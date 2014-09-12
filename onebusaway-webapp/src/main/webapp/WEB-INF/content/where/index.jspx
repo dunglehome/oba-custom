@@ -20,14 +20,14 @@
 <jsp:directive.page contentType="text/html" />
 <head>
 <meta http-equiv="Refresh" content="60" />
-<title>Test</title>
+<title>Test-Index</title>
 </head>
 <body>
 
 <div id="content">
 <div class="panel">
 
-<s:a action="blah">hey</s:a>
+<s:a action="blah">Hey-Index</s:a>
 
 </div>
 </div>
