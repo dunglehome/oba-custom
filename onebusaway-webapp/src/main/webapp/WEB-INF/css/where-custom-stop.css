@@ -14,9 +14,14 @@
  * limitations under the License.
  */
 #container {
-	margin-left: 1%;
-	margin-right: 1%;
-	width: 98%;
+	font-size: 20pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+	padding: 0px;
+	text-align: center;
+	width: 275px;
 }
 
 .stopNameHeader {
@@ -38,41 +43,57 @@
 }
 
 .arrivalsTable {
+	text-align: center;
 	width: 100%;
 }
 
 .arrivalsTable tr {
-	border-bottom: 4px solid #aaaaaa;
+	border-bottom: 1px solid rgb(170, 170, 170);
 }
 
 .arrivalsHeader {
-	font-size: 20pt;
+	background: none repeat scroll 0 0 orange;
 }
 
-.arrivalsRow td {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.arrivalsRouteEntry,.arrivalsStatusEntry {
-	font-size: 72pt;
-	font-weight: bold;
-}
-
-.arrivalsRouteEntry,.arrivalsDescriptionEntry {
-	padding-right: 30px;
+.arrivalsHeader td {
+	font-size: 15pt;
+	text-align: center;
 }
 
 .arrivalsDestinationEntry {
-	font-size: 36pt;
+	font-size: 11pt;
 	font-weight: bold;
 }
 
 .arrivalsTimePanel {
-	font-size: 20pt;
+	font-size: 12pt;
 }
 
 .arrivalsStatusEntry {
 	text-align: right;
 	padding-right: 20px;
+}
+
+.arrivalsStatusUpdates {
+	background: none repeat scroll 0 0 rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font-family: Arial, Helvetica, Helvetica Neue, Verdana, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+	margin-top: 10px;
+}
+
+.arrivalsRow td {
+	padding: 7px 0px;
+	text-align: center;
+}
+
+.arrivalsRouteEntry,.arrivalsDescriptionEntry {
+	padding-right: 12px;
+}
+
+.arrivalsRouteEntry,.arrivalsStatusEntry {
+	font-size: 20pt;
+	font-weight: bold;
 }

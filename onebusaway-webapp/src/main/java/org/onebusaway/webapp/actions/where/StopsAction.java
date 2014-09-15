@@ -24,64 +24,61 @@ import org.apache.struts2.convention.annotation.Results;
 import org.onebusaway.exceptions.ServiceException;
 import org.onebusaway.geospatial.model.CoordinateBounds;
 import org.onebusaway.transit_data.model.SearchQueryBean;
+import org.onebusaway.transit_data.model.SearchQueryBean.EQueryType;
 import org.onebusaway.transit_data.model.StopBean;
 import org.onebusaway.transit_data.model.StopsBean;
-import org.onebusaway.transit_data.model.SearchQueryBean.EQueryType;
 
-@Results( {@Result(type = "redirectAction", name = "singleStopFound", params = {
-    "actionName", "stop", "id", "${stop.id}", "parse", "true"})})
+@Results({ @Result(type = "redirectAction", name = "singleStopFound", params = { "actionName", "stop", "id", "${stop.id}", "parse", "true" }) })
 public class StopsAction extends AbstractWhereAction {
 
-  private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-  private String _code;
+	private String _code;
 
-  private StopBean _stop;
+	private StopBean _stop;
 
-  private List<StopBean> _stops;
+	private List<StopBean> _stops;
 
-  public void setCode(String code) {
-    _code = code;
-  }
+	public void setCode(String code) {
+		_code = code;
+	}
 
-  public List<StopBean> getStops() {
-    return _stops;
-  }
+	public List<StopBean> getStops() {
+		return _stops;
+	}
 
-  public StopBean getStop() {
-    return _stop;
-  }
+	public StopBean getStop() {
+		return _stop;
+	}
 
-  @Override
-  @Actions( {
-      @Action(value = "/where/iphone/stops"),
-      @Action(value = "/where/text/stops")})
-  public String execute() throws ServiceException {
+	@Override
+	@Actions({ @Action(value = "/where/iphone/stops"), @Action(value = "/where/text/stops") })
+	public String execute() throws ServiceException {
 
-    CoordinateBounds bounds = getServiceArea();
+		CoordinateBounds bounds = getServiceArea();
 
-    if (bounds == null) {
-      pushNextAction("stops", "code", _code);
-      return "query-default-search-location";
-    }
-    
-    SearchQueryBean searchQuery = new SearchQueryBean();
-    searchQuery.setBounds(bounds);
-    searchQuery.setMaxCount(5);
-    searchQuery.setType(EQueryType.BOUNDS_OR_CLOSEST);
-    searchQuery.setQuery(_code);
-    
-    StopsBean stopsResult = _transitDataService.getStops(searchQuery);
+		if (bounds == null) {
+			pushNextAction("stops", "code", _code);
+			return "query-default-search-location";
+		}
 
-    _stops = stopsResult.getStops();
+		SearchQueryBean searchQuery = new SearchQueryBean();
+		searchQuery.setBounds(bounds);
+		searchQuery.setMaxCount(5);
+		searchQuery.setType(EQueryType.BOUNDS_OR_CLOSEST);
+		searchQuery.setQuery(_code);
 
-    if (_stops.size() == 0) {
-      return "noStopsFound";
-    } else if (_stops.size() > 1) {
-      return "multipleStopsFound";
-    } else {
-      _stop = _stops.get(0);
-      return "singleStopFound";
-    }
-  }
+		StopsBean stopsResult = _transitDataService.getStops(searchQuery);
+
+		_stops = stopsResult.getStops();
+
+		if (_stops.size() == 0) {
+			return "noStopsFound";
+		} else if (_stops.size() > 1) {
+			return "multipleStopsFound";
+		} else {
+			_stop = _stops.get(0);
+			return "singleStopFound";
+		}
+	}
 }

@@ -16,32 +16,21 @@
     limitations under the License.
 
 -->
-<jsp:root version="1.2" xmlns:jsp="http://java.sun.com/JSP/Page"
-    xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:s="/struts-tags"
-    xmlns:oba="/oba-tags">
-
-    <jsp:directive.page contentType="text/html" />
-    
-    <s:set var="presentation" value="parameters.presentation"/>
-    <s:set var="excludeOrderLinks"
-        value="parameters.excludeOrderLinks == true" />
-    <s:set var="excludeTripLinks"
-        value="parameters.excludeTripLinks == true" />        
-
-    <s:push value="parameters.arrivalAndDeparture">
-
-        <s:set name="route" value="trip.route" />
-        <s:set name="arrivalsStatusLabelStyle"
-            value="#presentation.getStatusLabelStyle(top)" />
-
-        <jsp:element name="tr">
+<jsp:root version="1.2" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:s="/struts-tags" xmlns:oba="/oba-tags">
+	<jsp:directive.page contentType="text/html" />
+	<s:set var="presentation" value="parameters.presentation" />
+	<s:set var="excludeOrderLinks" value="parameters.excludeOrderLinks == true" />
+	<s:set var="excludeTripLinks" value="parameters.excludeTripLinks == true" />
+	<s:push value="parameters.arrivalAndDeparture">
+		<s:set name="route" value="trip.route" />
+		<s:set name="arrivalsStatusLabelStyle" value="#presentation.getStatusLabelStyle(top)" />
+		<jsp:element name="tr">
             <jsp:attribute name="id">
-                <s:property value="#presentation.getMinutesElementId(top)"/>
+                <s:property value="#presentation.getMinutesElementId(top)" />
             </jsp:attribute>
             <jsp:attribute name="class">arrivalsRow</jsp:attribute>
             <jsp:element name="td">
-        	  <jsp:attribute name="class">arrivalsRouteEntry<s:if
-                        test="isLongRouteName(#route)"> arrivalsRouteLongNameEntry</s:if>
+        	  <jsp:attribute name="class">arrivalsRouteEntry<s:if test="isLongRouteName(#route)"> arrivalsRouteLongNameEntry</s:if>
               </jsp:attribute>
               <s:if test="#excludeOrderLinks">
                 <oba:routeName value="trip" />
@@ -74,32 +63,29 @@
                 </s:a>
               </s:else>
             </div>
-            <div class="arrivalsTimePanel"><s:if
-                test="frequency == null">
-                <span class="arrivalsTimeEntry"> <oba:date
-                    value="#presentation.getBestTime(top)"
-                    format="hh:mm" /> </span> - <jsp:element name="span">
+            <div class="arrivalsTimePanel">
+						<s:if test="frequency == null">
+                <span class="arrivalsTimeEntry"> <oba:date value="#presentation.getBestTime(top)" format="hh:mm" /> </span> - 
+                <jsp:element name="span">
                 <jsp:attribute name="class">
                     statusLabel <s:property value="#arrivalsStatusLabelStyle" />
                 </jsp:attribute>
-                <s:property
-                        value="#presentation.getStatusLabel(top)" />
+                <s:property value="#presentation.getStatusLabel(top)" />
               </jsp:element>
             </s:if> <s:else>
                 <jsp:text>Every </jsp:text>
                 <s:property value="frequency.headway/60" />
                 <jsp:text> mins</jsp:text>
-                <s:if
-                    test="#presentation.isShowFrequencyFrom(frequency)">
+                <s:if test="#presentation.isShowFrequencyFrom(frequency)">
                     <jsp:text> from </jsp:text>
-                    <oba:date format="hh:mmaa"
-                        value="frequency.startTime" />
+                    <oba:date format="hh:mmaa" value="frequency.startTime" />
                 </s:if>
                 <s:else>
                     <jsp:text> until </jsp:text>
                     <oba:date format="hh:mmaa" value="frequency.endTime" />
                 </s:else>
-            </s:else></div>
+            </s:else>
+			</div>
             </div>
             </td>
             <jsp:element name="td">
@@ -111,29 +97,27 @@
                 <s:if test="#excludeOrderLinks">
                   <span><s:property value="#presentation.getMinutesLabel(top)" /></span>
                   <s:component template="arrival-and-departure-service-alert-snippet.jspx">
-                    <s:param name="arrivalAndDeparture" value="top"/>
-                    <s:param name="presentation" value="#presentation"/>
+                    <s:param name="arrivalAndDeparture" value="top" />
+                    <s:param name="presentation" value="#presentation" />
                   </s:component>
                 </s:if>
                 <s:else>
                 <s:url var="url" action="arrival-and-departure-for-stop">
                     <s:param name="stopId" value="stop.id" />
                     <s:param name="tripId" value="trip.id" />
-                    <s:param name="stopSequence" value="stopSequence"/>
-                    <s:param name="serviceDate" value="serviceDate"/> 
+                    <s:param name="stopSequence" value="stopSequence" />
+                    <s:param name="serviceDate" value="serviceDate" /> 
                     <s:param name="vehicleId" value="tripStatus.vehicleId" />
                 </s:url>
                 <s:a href="%{url}">
                     <span><s:property value="#presentation.getMinutesLabel(top)" /></span>
                     <s:component template="arrival-and-departure-service-alert-snippet.jspx">
-                        <s:param name="arrivalAndDeparture" value="top"/>
-                        <s:param name="presentation" value="#presentation"/>
+                        <s:param name="arrivalAndDeparture" value="top" />
+                        <s:param name="presentation" value="#presentation" />
                     </s:component>
                 </s:a>
                 </s:else>
             </jsp:element>
         </jsp:element>
-
-    </s:push>
-
+	</s:push>
 </jsp:root>

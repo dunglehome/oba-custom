@@ -16,22 +16,17 @@
     limitations under the License.
 
 -->
-<html xmlns:jsp="http://java.sun.com/JSP/Page"
-    xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:s="/struts-tags" xmlns:decorator="http://www.opensymphony.com/sitemesh/decorator">
-
-<jsp:output doctype-root-element="html"
-    doctype-public="-//W3C//DTD XHTML 1.1 Transitional//EN"
-    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
-    
+<html xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:s="/struts-tags" xmlns:decorator="http://www.opensymphony.com/sitemesh/decorator">
+<jsp:output doctype-root-element="html" doctype-public="-//W3C//DTD XHTML 1.1 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
 <jsp:directive.page contentType="text/html" />
-
-<s:set var="template_override" value="#configuration['webapp_template_override']"/>
+<s:set var="template_override" value="#configuration['webapp_template_override']" />
 <s:if test="#template_override != null">
-    <c:set var="template_override"><s:property value="#template_override"/></c:set>
-    <jsp:include page="${template_override}"/>
+	<c:set var="template_override">
+		<s:property value="#template_override" />
+	</c:set>
+	<jsp:include page="${template_override}" />
 </s:if>
 <s:else>
-  <jsp:include page="/WEB-INF/content/snippets/wrapper-header-standard.jspx"/>
+	<jsp:include page="/WEB-INF/content/snippets/wrapper-header-standard.jspx" />
 </s:else>
-    
 </html>

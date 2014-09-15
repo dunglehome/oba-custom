@@ -21,8 +21,8 @@
 <s:set name="now" value="getNow()" />
 <head>
 <link rel="stylesheet" type="text/css" media="all" href="${oba:resource('/WEB-INF/css/where-stop.css')}" />
-<link rel="stylesheet" type="text/css" media="all" href="${oba:resource('/WEB-INF/css/where-sign.css')}" />
-<link rel="stylesheet" type="text/css" media="all" href="${oba:resource('/WEB-INF/css/where-sign-stop.css')}" />
+<link rel="stylesheet" type="text/css" media="all" href="${oba:resource('/WEB-INF/css/where-custom.css')}" />
+<link rel="stylesheet" type="text/css" media="all" href="${oba:resource('/WEB-INF/css/where-custom-stop.css')}" />
 <script type="text/javascript" src="${oba:url('/config.action')}">
 	<jsp:text></jsp:text>
 </script>
@@ -44,7 +44,7 @@
 <title><s:if test="title != null">
 		<s:property value="title" />
 	</s:if> <s:else>
-		<s:component template="stops-title-head-snippet.jspx">
+		<s:component template="stops-title-head-snippet-custom.jspx">
 			<s:param name="stops" value="result.stops" />
 		</s:component>
 	</s:else></title>
@@ -59,7 +59,7 @@
 						<s:property value="title" />
 					</s:if>
 					<s:else>
-						<s:component template="stops-title-head-snippet.jspx">
+						<s:component template="stops-title-head-snippet-custom.jspx">
 							<s:param name="stops" value="result.stops" />
 							<s:param name="delimiter" value="'&lt;br&gt;'" />
 						</s:component>
@@ -72,7 +72,7 @@
 			<s:param name="situations" value="situations" />
 		</s:component>
 		<!-- The Arrivals and Departures Table -->
-		<s:component template="arrivals-and-departures-table-snippet.jspx">
+		<s:component template="arrivals-and-departures-table-snippet-custom.jspx">
 			<s:param name="arrivalsAndDepartures" value="result.arrivalsAndDepartures" />
 			<s:param name="presentation" value="arrivalsAndDeparturesPresentation" />
 			<s:param name="excludeOrderLinks" value="true" />
