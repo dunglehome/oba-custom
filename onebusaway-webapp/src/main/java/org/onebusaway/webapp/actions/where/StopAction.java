@@ -127,6 +127,16 @@ public class StopAction extends AbstractWhereAction implements ModelDriven<Webap
 		return _model.isShowArrivals();
 	}
 	
+	public void setShowArrivalsCustom(boolean showArrivalsCustom)
+	{
+		_model.setShowArrivalsCustom(showArrivalsCustom);
+	}
+	
+	public boolean isShowArrivalsCustom()
+	{
+		return _model.isShowArrivalsCustom();
+	}
+	
 	@Override
 	public WebappArrivalsAndDeparturesModel getModel()
 	{

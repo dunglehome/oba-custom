@@ -43,79 +43,90 @@ import org.onebusaway.utility.text.NaturalStringOrder;
 import org.onebusaway.utility.text.StringLibrary;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class ArrivalsAndDeparturesModel {
-
-	private static final OrderConstraint SORT_BY_TIME = new SortByTime();
-
-	private static final OrderConstraint SORT_BY_DEST = new SortByDestination();
-
-	private static final OrderConstraint SORT_BY_ROUTE = new SortByRoute();
-
-	private TransitDataService _transitDataService;
-
-	private CurrentUserService _currentUserService;
-
-	private DefaultSearchLocationService _defaultSearchLocationService;
-
-	private List<String> _stopIds;
-
-	private Set<String> _routeFilter = new HashSet<String>();
-
-	private OrderConstraint _order = SORT_BY_TIME;
-
-	private TimeZone _timeZone;
-
-	private ArrivalsAndDeparturesQueryBean _query = new ArrivalsAndDeparturesQueryBean();
-
-	protected StopsWithArrivalsAndDeparturesBean _result;
-
-	private List<AgencyBean> _agencies;
-
+public class ArrivalsAndDeparturesModel
+{
+	
+	private static final OrderConstraint			SORT_BY_TIME		= new SortByTime();
+	
+	private static final OrderConstraint			SORT_BY_DEST		= new SortByDestination();
+	
+	private static final OrderConstraint			SORT_BY_ROUTE		= new SortByRoute();
+	
+	private TransitDataService						_transitDataService;
+	
+	private CurrentUserService						_currentUserService;
+	
+	private DefaultSearchLocationService			_defaultSearchLocationService;
+	
+	private List<String>							_stopIds;
+	
+	private Set<String>								_routeFilter		= new HashSet<String>();
+	
+	private OrderConstraint							_order				= SORT_BY_TIME;
+	
+	private TimeZone								_timeZone;
+	
+	private ArrivalsAndDeparturesQueryBean			_query				= new ArrivalsAndDeparturesQueryBean();
+	
+	protected StopsWithArrivalsAndDeparturesBean	_result;
+	
+	private List<AgencyBean>						_agencies;
+	
 	/**
 	 * True if we filtered the results (ex. only include particular set of routes)
 	 */
-	private boolean _filtered = false;
-
-	protected UserBean _user;
-
-	private boolean _onlyNext = false;
-
-	private boolean _showArrivals = false;
-
-	private int _refresh = 60;
-
+	private boolean									_filtered			= false;
+	
+	protected UserBean								_user;
+	
+	private boolean									_onlyNext			= false;
+	
+	private boolean									_showArrivals		= false;
+	
+	private boolean									_showArrivalsCustom	= false;
+	
+	private int										_refresh			= 60;
+	
 	@Autowired
-	public void setTransitDataService(TransitDataService transitDataService) {
+	public void setTransitDataService(TransitDataService transitDataService)
+	{
 		_transitDataService = transitDataService;
 	}
-
+	
 	@Autowired
-	public void setCurrentUserService(CurrentUserService currentUserService) {
+	public void setCurrentUserService(CurrentUserService currentUserService)
+	{
 		_currentUserService = currentUserService;
 	}
-
+	
 	@Autowired
-	public void setDefaultSearchLocationService(DefaultSearchLocationService defaultSearchLocationService) {
+	public void setDefaultSearchLocationService(DefaultSearchLocationService defaultSearchLocationService)
+	{
 		_defaultSearchLocationService = defaultSearchLocationService;
 	}
-
-	public void setStopIds(List<String> stopIds) {
+	
+	public void setStopIds(List<String> stopIds)
+	{
 		_stopIds = stopIds;
 	}
-
-	public List<String> getStopIds() {
+	
+	public List<String> getStopIds()
+	{
 		return _stopIds;
 	}
-
-	public void setRouteFilter(Set<String> routeFilter) {
+	
+	public void setRouteFilter(Set<String> routeFilter)
+	{
 		_routeFilter = routeFilter;
 	}
-
-	public Set<String> getRouteFilter() {
+	
+	public Set<String> getRouteFilter()
+	{
 		return _routeFilter;
 	}
-
-	public boolean setOrderFromString(String order) {
+	
+	public boolean setOrderFromString(String order)
+	{
 		if ("route".equals(order))
 			_order = SORT_BY_ROUTE;
 		else if ("dest".equals(order))
@@ -126,154 +137,186 @@ public class ArrivalsAndDeparturesModel {
 			return false;
 		return true;
 	}
-
-	public void setTargetTime(Date time) {
+	
+	public void setTargetTime(Date time)
+	{
 		_query.setTime(time.getTime());
 	}
-
-	public void setMinutesBefore(int minutesBefore) {
+	
+	public void setMinutesBefore(int minutesBefore)
+	{
 		_query.setMinutesBefore(minutesBefore);
 	}
-
-	public void setMinutesAfter(int minutesAfter) {
+	
+	public void setMinutesAfter(int minutesAfter)
+	{
 		_query.setMinutesAfter(minutesAfter);
 	}
-
-	public void setFrequencyMinutesBefore(int frequencyMinutesBefore) {
+	
+	public void setFrequencyMinutesBefore(int frequencyMinutesBefore)
+	{
 		_query.setFrequencyMinutesBefore(frequencyMinutesBefore);
 	}
-
-	public void setFrequencyMinutesAfter(int frequencyMinutesAfter) {
+	
+	public void setFrequencyMinutesAfter(int frequencyMinutesAfter)
+	{
 		_query.setFrequencyMinutesAfter(frequencyMinutesAfter);
 	}
-
-	public void setOnlyNext(boolean onlyNext) {
+	
+	public void setOnlyNext(boolean onlyNext)
+	{
 		_onlyNext = onlyNext;
 	}
-
-	public void setShowArrivals(boolean showArrivals) {
+	
+	public void setShowArrivals(boolean showArrivals)
+	{
 		_showArrivals = showArrivals;
 	}
-
-	public void setRefresh(int refresh) {
+	
+	public void setShowArrivalsCustom(boolean showArrivalsCustom)
+	{
+		// TODO Auto-generated method stub
+		_showArrivalsCustom = showArrivalsCustom;
+	}
+	
+	public void setRefresh(int refresh)
+	{
 		_refresh = refresh;
 	}
-
-	public int getRefresh() {
+	
+	public int getRefresh()
+	{
 		return _refresh;
 	}
-
-	public boolean isMissingData() {
+	
+	public boolean isMissingData()
+	{
 		return _stopIds == null || _stopIds.isEmpty();
 	}
-
-	public void process() {
-
+	
+	public void process()
+	{
+		
 		_result = _transitDataService.getStopsWithArrivalsAndDepartures(_stopIds, _query);
-
+		
 		checkForEmptyResult();
 		filterResults();
 		orderResults();
-
+		
 		_agencies = AgencyPresenter.getAgenciesForArrivalAndDepartures(_result.getArrivalsAndDepartures());
-
+		
 		_timeZone = TimeZone.getTimeZone(_result.getTimeZone());
 		if (_timeZone == null)
 			_timeZone = TimeZone.getDefault();
-
+		
 		updateCurrentUser();
 	}
-
-	public TimeZone getTimeZone() {
+	
+	public TimeZone getTimeZone()
+	{
 		return _timeZone;
 	}
-
-	public StopsWithArrivalsAndDeparturesBean getResult() {
+	
+	public StopsWithArrivalsAndDeparturesBean getResult()
+	{
 		return _result;
 	}
-
-	public void setResult(StopsWithArrivalsAndDeparturesBean result) {
+	
+	public void setResult(StopsWithArrivalsAndDeparturesBean result)
+	{
 		_result = result;
 	}
-
-	public boolean isFiltered() {
+	
+	public boolean isFiltered()
+	{
 		return _filtered;
 	}
-
-	public List<AgencyBean> getAgencies() {
+	
+	public List<AgencyBean> getAgencies()
+	{
 		return _agencies;
 	}
-
+	
 	/****
 	 * Private Methods
 	 ****/
-
-	private void checkForEmptyResult() {
-		if (_result == null) {
+	
+	private void checkForEmptyResult()
+	{
+		if (_result == null)
+		{
 			if (_stopIds.size() == 1)
 				throw new NoSuchStopServiceException(_stopIds.get(0));
 			else
 				throw new NoSuchStopServiceException(_stopIds.toString());
 		}
 	}
-
-	private void filterResults() {
-
+	
+	private void filterResults()
+	{
+		
 		applyRouteFilter();
 		applyArrivalsVsDeparturesFilter();
 		applyOnlyNextFilter();
 	}
-
-	private void applyRouteFilter() {
+	
+	private void applyRouteFilter()
+	{
 		if (_routeFilter == null || _routeFilter.isEmpty())
 			return;
-
+		
 		List<ArrivalAndDepartureBean> filtered = new ArrayList<ArrivalAndDepartureBean>();
-		for (ArrivalAndDepartureBean bean : _result.getArrivalsAndDepartures()) {
+		for (ArrivalAndDepartureBean bean : _result.getArrivalsAndDepartures())
+		{
 			if (_routeFilter.contains(bean.getTrip().getRoute().getId()))
 				filtered.add(bean);
 			else
 				_filtered = true;
 		}
-
+		
 		_result.setArrivalsAndDepartures(filtered);
 	}
-
-	private void applyArrivalsVsDeparturesFilter() {
-
+	
+	private void applyArrivalsVsDeparturesFilter()
+	{
+		
 		List<ArrivalAndDepartureBean> filtered = new ArrayList<ArrivalAndDepartureBean>();
-
-		for (ArrivalAndDepartureBean bean : _result.getArrivalsAndDepartures()) {
-			if ((_showArrivals && bean.isArrivalEnabled()) || (!_showArrivals && bean.isDepartureEnabled()))
+		
+		for (ArrivalAndDepartureBean bean : _result.getArrivalsAndDepartures())
+		{
+			if (((_showArrivals || _showArrivalsCustom) && bean.isArrivalEnabled()) || ((!_showArrivals || !_showArrivalsCustom) && bean.isDepartureEnabled()))
 				filtered.add(bean);
 		}
-
+		
 		_result.setArrivalsAndDepartures(filtered);
 	}
-
-	private void applyOnlyNextFilter() {
-
+	
+	private void applyOnlyNextFilter()
+	{
+		
 		if (!_onlyNext)
 			return;
-
+		
 		List<ArrivalAndDepartureBean> current = _result.getArrivalsAndDepartures();
 		Collections.sort(current, SORT_BY_TIME);
-
+		
 		Map<String, ArrivalAndDepartureBean> keepers = new HashMap<String, ArrivalAndDepartureBean>();
-		for (ArrivalAndDepartureBean bean : current) {
+		for (ArrivalAndDepartureBean bean : current)
+		{
 			String key = getRouteKeyForArrivalAndDeparture(bean);
 			if (!keepers.containsKey(key))
 				keepers.put(key, bean);
 		}
-
+		
 		List<ArrivalAndDepartureBean> filtered = new ArrayList<ArrivalAndDepartureBean>(keepers.values());
 		OrderConstraint c = _order == null ? SORT_BY_TIME : _order;
 		Collections.sort(filtered, c);
-
+		
 		_result.setArrivalsAndDepartures(filtered);
 	}
-
-	private String getRouteKeyForArrivalAndDeparture(ArrivalAndDepartureBean bean) {
+	
+	private String getRouteKeyForArrivalAndDeparture(ArrivalAndDepartureBean bean)
+	{
 		String name = bean.getRouteShortName();
 		if (name != null)
 			return name;
@@ -287,34 +330,40 @@ public class ArrivalsAndDeparturesModel {
 			return name;
 		return route.getId();
 	}
-
-	private void orderResults() {
+	
+	private void orderResults()
+	{
 		if (_order != null)
 			Collections.sort(_result.getArrivalsAndDepartures(), _order);
 	}
-
-	private void updateCurrentUser() {
+	
+	private void updateCurrentUser()
+	{
 		// Save the last selected stop id
 		_currentUserService.setLastSelectedStopIds(_stopIds);
-
+		
 		_user = _currentUserService.getCurrentUser();
-		if (_user == null || !_user.hasDefaultLocation()) {
+		if (_user == null || !_user.hasDefaultLocation())
+		{
 			List<StopBean> stops = _result.getStops();
 			StopBean stop = stops.get(0);
 			_defaultSearchLocationService.setDefaultLocationForCurrentUser(stop.getName(), stop.getLat(), stop.getLon());
 		}
 	}
-
+	
 	/****
-   *
-   ****/
-
-	private interface OrderConstraint extends Comparator<ArrivalAndDepartureBean> {
+     *
+     ****/
+	
+	private interface OrderConstraint extends Comparator<ArrivalAndDepartureBean>
+	{
 		// public void addTargetParams(Map<String, String> params);
 	}
-
-	private static class SortByRoute implements OrderConstraint {
-		public int compare(ArrivalAndDepartureBean o1, ArrivalAndDepartureBean o2) {
+	
+	private static class SortByRoute implements OrderConstraint
+	{
+		public int compare(ArrivalAndDepartureBean o1, ArrivalAndDepartureBean o2)
+		{
 			String a = RoutePresenter.getNameForRoute(o1.getTrip().getRoute());
 			String b = RoutePresenter.getNameForRoute(o2.getTrip().getRoute());
 			if (a.equals(b))
@@ -322,17 +371,21 @@ public class ArrivalsAndDeparturesModel {
 			return NaturalStringOrder.compareNaturalIgnoreCaseAscii(a, b);
 		}
 	}
-
-	private static class SortByTime implements OrderConstraint {
-		public int compare(ArrivalAndDepartureBean o1, ArrivalAndDepartureBean o2) {
+	
+	private static class SortByTime implements OrderConstraint
+	{
+		public int compare(ArrivalAndDepartureBean o1, ArrivalAndDepartureBean o2)
+		{
 			long a = o1.computeBestDepartureTime();
 			long b = o2.computeBestDepartureTime();
 			return a == b ? 0 : (a < b ? -1 : 1);
 		}
 	}
-
-	private static class SortByDestination implements OrderConstraint {
-		public int compare(ArrivalAndDepartureBean o1, ArrivalAndDepartureBean o2) {
+	
+	private static class SortByDestination implements OrderConstraint
+	{
+		public int compare(ArrivalAndDepartureBean o1, ArrivalAndDepartureBean o2)
+		{
 			String a = StringLibrary.getBestName(o1.getTripHeadsign(), o1.getTrip().getTripHeadsign(), "");
 			String b = StringLibrary.getBestName(o2.getTripHeadsign(), o2.getTrip().getTripHeadsign(), "");
 			int i = a.compareTo(b);

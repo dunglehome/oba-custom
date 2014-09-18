@@ -6,20 +6,14 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
-
 	<constant name="struts.custom.i18n.resources" value="org/onebusaway/presentation/presentation-messages" />
-
 	<constant name="struts.patternMatcher" value="namedVariable" />
-
 	<bean type="org.apache.struts2.components.template.TemplateEngine" name="jspx" class="org.apache.struts2.components.template.JspTemplateEngine" />
-
 	<package name="onebusaway-webapp-default" extends="struts-default">
-
 		<result-types>
 			<result-type name="rome" class="org.onebusaway.webapp.actions.rss.RomeResult" />
 			<result-type name="json" class="org.apache.struts2.json.JSONResult" />
 		</result-types>
-
 		<interceptors>
 			<interceptor name="cache-control" class="org.onebusaway.presentation.services.cachecontrol.CacheControlInterceptor" />
 			<interceptor name="configuration" class="org.onebusaway.presentation.impl.configuration.ConfigurationInterceptor" />
@@ -35,9 +29,7 @@
 				<interceptor-ref name="current-user" />
 			</interceptor-stack>
 		</interceptors>
-
 		<default-interceptor-ref name="onebusaway-webapp-stack" />
-
 		<global-results>
 			<result name="ServiceException">/WEB-INF/content/exception.jspx</result>
 			<result name="NoSuchStopServiceException">/WEB-INF/content/exception-noSuchStop.jspx</result>
@@ -55,9 +47,7 @@
 				<param name="actionName">index</param>
 			</result>
 			<result name="input">/WEB-INF/content/input.jspx</result>
-
 		</global-results>
-
 		<global-exception-mappings>
 			<!-- <exception-mapping exception="org.onebusaway.exceptions.ServiceException" result="ServiceException" /> -->
 			<exception-mapping exception="org.onebusaway.exceptions.NoSuchStopServiceException" result="NoSuchStopServiceException" />
@@ -67,7 +57,5 @@
 			<exception-mapping exception="org.onebusaway.exceptions.MultipleServiceAreasServiceException" result="MultipleServiceAreasServiceException" />
 			<exception-mapping exception="org.onebusaway.exceptions.NoSuchAgencyServiceException" result="NoSuchAgencyServiceException" />
 		</global-exception-mappings>
-
 	</package>
-
 </struts>

@@ -70,6 +70,7 @@
 			</tr>
 		</s:if>
 	</table>
+	<!--dule@ucalgary.ca-->
 	<div class="arrivalsStatusUpdates">
 		Last Updated:
 		<oba:date value="'now'" format="hh:mm aa" />
